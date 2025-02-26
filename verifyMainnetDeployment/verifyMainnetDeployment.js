@@ -28,7 +28,7 @@ const TransparentProxy = require(pathTransparentProxy);
 const etherscanURL = "https://etherscan.io/address/"
 async function main() {
     // First verify not immutable conracts
-    const mainnetProvider = new ethers.providers.JsonRpcProvider(`https://mainnet.infura.io/v3/${process.env.INFURA_PROJECT_ID}`);
+    const mainnetProvider = new ethers.providers.JsonRpcProvider(`https://eth-sepolia.g.alchemy.com/v2/${process.env.INFURA_PROJECT_ID}`);
 
     // FflonkVerifier
     expect(await mainnetProvider.getCode(deployMainnet.fflonkVerifierAddress))
@@ -140,7 +140,7 @@ async function main() {
     console.log("Etherscan URL: ", etherscanURL + polygonZkEVMImpl);
     console.log("Path file: ", path.join(__dirname, pathPolygonZkEVM));
     console.log();
-    
+
     // Check transparent Proxys
     expect(await mainnetProvider.getCode(deployMainnet.polygonZkEVMAddress))
         .to.be.equal(TransparentProxyOZUpgradeDep.deployedBytecode);
@@ -167,7 +167,7 @@ async function main() {
     let mainnetPolygonZkVEM = (await ethers.getContractFactory('PolygonZkEVM', mainnetProvider)).attach(deployMainnet.polygonZkEVMAddress);
     mainnetPolygonZkVEM = mainnetPolygonZkVEM.connect(mainnetProvider);
     expect(await mainnetPolygonZkVEM.batchNumToStateRoot(0)).to.be.equal(deployMainnet.genesisRoot);
-    console.log("Genesis root was correctly verified:",deployMainnet.genesisRoot)
+    console.log("Genesis root was correctly verified:", deployMainnet.genesisRoot)
 
 }
 // We recommend this pattern to be able to use async/await everywhere

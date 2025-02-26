@@ -50,7 +50,7 @@ const keylessDeployerMainnet = "0x9d90066e7478496e2284E54c3548106bb4F90E50";
 const deployerMainnet = "0x4c1665d6651ecEfa59B9B3041951608468b18891";
 
 const mainnetMultisig = "0x4c1665d6651ecEfa59B9B3041951608468b18891";
-const mainnetInitialZkEVMDeployerOwner = "0x4c1665d6651ecEfa59B9B3041951608468b18891";
+const mainnetInitialZkEVMDeployerOwner = "0x5a375256886DB71b85DE6dB82fa3030230B84B7d";
 const mainnetMinDelayTimelock = 864000;
 
 const globalExitRootL2Address = "0xa40d5f56745a118d0906a34e69aec8c0db1cb8fa";

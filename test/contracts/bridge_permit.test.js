@@ -29,7 +29,7 @@ describe('PolygonZkEVMBridge Contract Permit tests', () => {
     const tokenName = 'Matic Token';
     const tokenSymbol = 'MATIC';
     const decimals = 18;
-    const tokenInitialBalance = ethers.parseEther('20000000');
+    const tokenInitialBalance = ethers.parseEther('250000000');
     const metadataToken = ethers.AbiCoder.defaultAbiCoder().encode(
         ['string', 'string', 'uint8'],
         [tokenName, tokenSymbol, decimals],

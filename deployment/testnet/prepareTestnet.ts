@@ -31,7 +31,7 @@ async function main() {
     if (deployParameters.multiplierGas || deployParameters.maxFeePerGas) {
         if (process.env.HARDHAT_NETWORK !== "hardhat") {
             currentProvider = ethers.getDefaultProvider(
-                `https://${process.env.HARDHAT_NETWORK}.infura.io/v3/${process.env.INFURA_PROJECT_ID}`
+                `https://eth-sepolia.g.alchemy.com/v2/${process.env.INFURA_PROJECT_ID}`
             ) as any;
             if (deployParameters.maxPriorityFeePerGas && deployParameters.maxFeePerGas) {
                 console.log(
@@ -94,7 +94,7 @@ async function main() {
      */
     const polTokenName = "Pol Token";
     const polTokenSymbol = "POL";
-    const polTokenInitialBalance = ethers.parseEther("20000000");
+    const polTokenInitialBalance = ethers.parseEther("250000000");
 
     const polTokenFactory = await ethers.getContractFactory("ERC20PermitMock", deployer);
     const polTokenContract = await polTokenFactory.deploy(

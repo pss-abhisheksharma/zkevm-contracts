@@ -22,7 +22,7 @@ async function main() {
     console.log("using signer: ", deployer.address);
 
     // hard fork
-    const rpc = `https://mainnet.infura.io/v3/${process.env.INFURA_PROJECT_ID}`;
+    const rpc = `https://eth-sepolia.g.alchemy.com/v2/${process.env.INFURA_PROJECT_ID}`;
     await reset(rpc);
     await setBalance(deployer.address, 100n ** 18n);
 

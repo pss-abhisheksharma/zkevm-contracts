@@ -9,7 +9,7 @@ describe('Polygon ZK-EVM Deployer', () => {
 
     const maticTokenName = 'Matic Token';
     const maticTokenSymbol = 'MATIC';
-    const maticTokenInitialBalance = ethers.parseEther('20000000');
+    const maticTokenInitialBalance = ethers.parseEther('250000000');
 
     beforeEach('Deploy contract', async () => {
         upgrades.silenceWarnings();

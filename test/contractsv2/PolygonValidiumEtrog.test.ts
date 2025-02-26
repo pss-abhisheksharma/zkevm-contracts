@@ -48,7 +48,7 @@ describe("PolygonZkEVMEtrog", () => {
 
     const polTokenName = "POL Token";
     const polTokenSymbol = "POL";
-    const polTokenInitialBalance = ethers.parseEther("20000000");
+    const polTokenInitialBalance = ethers.parseEther("250000000");
 
     const pendingStateTimeoutDefault = 100;
     const trustedAggregatorTimeout = 100;

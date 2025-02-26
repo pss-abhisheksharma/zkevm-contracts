@@ -45,7 +45,7 @@ describe("Polygon Rollup Manager", () => {
 
     const polTokenName = "POL Token";
     const polTokenSymbol = "POL";
-    const polTokenInitialBalance = ethers.parseEther("20000000");
+    const polTokenInitialBalance = ethers.parseEther("250000000");
 
     const pendingStateTimeoutDefault = 100;
     const trustedAggregatorTimeout = 100;
@@ -974,7 +974,7 @@ describe("Polygon Rollup Manager", () => {
         const gasTokenSymbol = "GTOKEN";
         const gasTokenDecimals = 18;
 
-        const gasTokenInitialBalance = ethers.parseEther("20000000");
+        const gasTokenInitialBalance = ethers.parseEther("250000000");
 
         const gasMetadataToken = ethers.AbiCoder.defaultAbiCoder().encode(
             ["string", "string", "uint8"],
@@ -1553,7 +1553,7 @@ describe("Polygon Rollup Manager", () => {
         const gasTokenSymbol = "GTOKEN";
         const gasTokenDecimals = 18;
 
-        const gasTokenInitialBalance = ethers.parseEther("20000000");
+        const gasTokenInitialBalance = ethers.parseEther("250000000");
 
         const gasMetadataToken = ethers.AbiCoder.defaultAbiCoder().encode(
             ["string", "string", "uint8"],
@@ -2267,7 +2267,7 @@ describe("Polygon Rollup Manager", () => {
         const gasTokenSymbol = "GTOKEN";
         const gasTokenDecimals = 18;
 
-        const gasTokenInitialBalance = ethers.parseEther("20000000");
+        const gasTokenInitialBalance = ethers.parseEther("250000000");
 
         const gasMetadataToken = ethers.AbiCoder.defaultAbiCoder().encode(
             ["string", "string", "uint8"],

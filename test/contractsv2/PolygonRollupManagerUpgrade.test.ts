@@ -59,7 +59,7 @@ describe("Polygon Rollup manager upgraded", () => {
 
     const polTokenName = "POL Token";
     const polTokenSymbol = "POL";
-    const polTokenInitialBalance = ethers.parseEther("20000000");
+    const polTokenInitialBalance = ethers.parseEther("250000000");
 
     const urlSequencer = "http://zkevm-json-rpc:8123";
     const chainID = 1000;

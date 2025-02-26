@@ -16,7 +16,7 @@ describe('PolygonZkEVMBridge Contract werid metadata', () => {
     const tokenName = 'Matic Token';
     const tokenSymbol = 'MATIC';
     const decimals = 18;
-    const tokenInitialBalance = ethers.parseEther('20000000');
+    const tokenInitialBalance = ethers.parseEther('250000000');
 
     const networkIDMainnet = 0;
     const networkIDRollup = 1;

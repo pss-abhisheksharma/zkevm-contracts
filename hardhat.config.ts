@@ -187,7 +187,7 @@ const config: HardhatUserConfig = {
         sepolia: {
             url: process.env.SEPOLIA_PROVIDER
                 ? process.env.SEPOLIA_PROVIDER
-                : `https://sepolia.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
+                : `https://eth-sepolia.g.alchemy.com/v2/${process.env.INFURA_PROJECT_ID}`,
             accounts: {
                 mnemonic: process.env.MNEMONIC || DEFAULT_MNEMONIC,
                 path: "m/44'/60'/0'/0",

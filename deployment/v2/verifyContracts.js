@@ -24,7 +24,7 @@ async function main() {
     // verify maticToken
     const polTokenName = 'Pol Token';
     const polTokenSymbol = 'POL';
-    const polTokenInitialBalance = ethers.parseEther('20000000');
+    const polTokenInitialBalance = ethers.parseEther('250000000');
 
     try {
         // verify governance

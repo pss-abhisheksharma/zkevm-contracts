@@ -21,7 +21,7 @@ describe('Polygon ZK-EVM', () => {
 
     const maticTokenName = 'Matic Token';
     const maticTokenSymbol = 'MATIC';
-    const maticTokenInitialBalance = ethers.parseEther('20000000');
+    const maticTokenInitialBalance = ethers.parseEther('250000000');
 
     const genesisRoot = '0x0000000000000000000000000000000000000000000000000000000000000001';
 
